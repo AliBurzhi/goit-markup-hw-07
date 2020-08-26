@@ -21,10 +21,14 @@ h2 {
 .services-list {
   display: flex;
   justify-content: center;
-}
 
-.services-list-items:not(:last-child) {
-  margin-right: 30px;
+  &-items:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &-items {
+    position: relative;
+  }
 }
 
 .services-description {
@@ -36,10 +40,6 @@ h2 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-}
-
-.services-list-items {
-  position: relative;
 }
 
 .overlay-one {

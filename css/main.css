@@ -333,14 +333,19 @@ img {
   text-decoration: none;
 }
 
-.header .container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.logo-img {
+  margin-right: 85px;
+  text-decoration: none;
 }
 
 .header {
   border-bottom: 1px solid #ececec;
+}
+
+.header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navigation {
@@ -354,11 +359,6 @@ img {
 
 .navigation-list-item:not(:last-child) {
   margin-right: 50px;
-}
-
-.logo-img {
-  margin-right: 85px;
-  text-decoration: none;
 }
 
 .contacts-header {
@@ -377,6 +377,16 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.header-address-link:hover, .header-address-link:focus {
+  color: #2196f3;
+}
+
+.header-address-link:hover,
+.header-address-link:focus .header-svg {
+  color: #757575;
+  fill: #2196f3;
+}
+
 .navigation-list-link {
   font-weight: 500;
   font-size: 14px;
@@ -385,6 +395,10 @@ img {
   color: #212121;
   padding-top: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navigation-list-link:hover, .navigation-list-link:focus {
+  color: #2196f3;
 }
 
 .header-tel-link {
@@ -398,18 +412,8 @@ img {
   text-decoration: none;
 }
 
-.navigation-list-link:hover,
-.navigation-list-link:focus {
-  color: #2196f3;
-}
-
 .header-tel-link {
   color: #757575;
-}
-
-.header-address-link:hover,
-.header-address-link:focus {
-  color: #2196f3;
 }
 
 .modal-btn,
@@ -467,16 +471,6 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-address-link:hover .header-svg {
-  color: #757575;
-  fill: #2196f3;
-}
-
-.header-address-link:focus .header-svg {
-  color: #757575;
-  fill: #2196f3;
-}
-
 h1 {
   margin: 0px;
 }
@@ -484,12 +478,7 @@ h1 {
 .hero {
   padding-top: 200px;
   padding-bottom: 280px;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(47, 48, 58, 0.8),
-      rgba(47, 48, 58, 0.8)
-    ),
-    url(../images/hero/Header-img.jpg);
+  background-image: linear-gradient(to bottom, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/hero/Header-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -613,6 +602,10 @@ h2 {
   margin-right: 30px;
 }
 
+.services-list-items {
+  position: relative;
+}
+
 .services-description {
   font-family: Roboto;
   font-weight: bold;
@@ -622,10 +615,6 @@ h2 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-}
-
-.services-list-items {
-  position: relative;
 }
 
 .overlay-one {
@@ -682,8 +671,7 @@ h3 {
 
 .team-list-item {
   background: #ffffff;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -763,8 +751,7 @@ h3 {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-list-item-link:hover,
-.social-list-item-link:focus {
+.social-list-item-link:hover, .social-list-item-link:focus {
   background-color: #2196f3;
 }
 
@@ -803,13 +790,21 @@ h3 {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-list-item:not(:last-child) {
-  margin-right: 30px;
+.clients-link-list:hover, .clients-link-list:focus {
+  background-color: #ffffff;
 }
 
-.clients-link-list:hover,
-.clients-link-list:focus {
-  background-color: #ffffff;
+.clients-link-list:hover, .clients-link-list:focus {
+  border-color: #2196f3;
+}
+
+.clients-link-list:hover .clients-list-item-link-svg,
+.clients-link-list:focus .clients-list-item-link-svg {
+  fill: #2196f3;
+}
+
+.clients-list-item:not(:last-child) {
+  margin-right: 30px;
 }
 
 .clients-list-item-link-svg {
@@ -845,16 +840,6 @@ h3 {
 .clients-list-item:nth-child(6) .clients-list-item-link-svg {
   width: 89px;
   height: 46px;
-}
-
-.clients-link-list:hover,
-.clients-link-list:focus {
-  border-color: #2196f3;
-}
-
-.clients-link-list:hover .clients-list-item-link-svg,
-.clients-link-list:focus .clients-list-item-link-svg {
-  fill: #2196f3;
 }
 
 .footer {
@@ -974,17 +959,16 @@ h3 {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link-list:hover,
-.footer-link-list:focus {
+.footer-link-list:hover, .footer-link-list:focus {
   background-color: #2196f3;
-}
-
-.footer-list-item-link-svg {
-  fill: #ffffff;
 }
 
 .footer-link-list:hover .footer-list-item-link-svg,
 .footer-link-list:focus .footer-list-item-link-svg {
+  fill: #ffffff;
+}
+
+.footer-list-item-link-svg {
   fill: #ffffff;
 }
 
