@@ -21,8 +21,6 @@
   margin-right: 50px;
 }
 
-
-
 .contacts-header {
   display: flex;
 }
@@ -40,12 +38,11 @@
 
   &:hover,
   &:focus {
-    color: $accent-color;
+    color: #2196f3;
   }
 
   &:hover,
   &:focus .header-svg {
-    color: #757575;
     fill: #2196f3;
   }
 }
