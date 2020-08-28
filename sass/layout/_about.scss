@@ -12,8 +12,8 @@
 
 .about-us-list:not(:last-child) {
   margin-right: 30px;
-  margin-top: 0px;
-  margin-bottom: 0px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .title {
@@ -24,7 +24,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $title-light-theme-color;
-  margin-top: 0px;
+  margin-top: 0;
   margin-bottom: 10px;
 }
 

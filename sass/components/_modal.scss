@@ -71,6 +71,7 @@
   margin-bottom: 28px;
   padding-top: 12px;
   padding-left: 16px;
+  padding-right: 16px;
 }
 
 .modal-form-label {
@@ -193,7 +194,6 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background-color: transparent;
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -252,7 +252,7 @@
   border: 0.2px solid #ffffff;
   background: #2196f3;
   border-radius: 2px;
-  background-image: url("/images/icon-check.svg");
+  background-image: url("../images/icon-check.svg");
   background-size: contain;
 }
 
